@@ -1,5 +1,5 @@
-BilibiliPubilcBlockList
-=======================
+Public Bilibili Block list
+==========================
 
 public comment filter list,use PHP  
 原理 http://blog.hcg.im/sora/2013/07/bilibili-%E5%85%B1%E7%94%A8blocklist%E5%B7%A5%E5%85%B7%E6%9E%84%E6%80%9D/
