@@ -19,7 +19,7 @@ Bilibili comment public  block list porxy,use PHP
 设置 interface.bilibili.tv 到 服务器主机
 
 ##SwitchySharp或autoProxy设置方法  
-设置以下几个规则到 服务器IP上
-http://interface.bilibili.tv/blocklist
-http://interface.bilibili.tv/dmblock*
-http://interface.bilibili.tv/dmunblock*
+设置以下几个规则到 服务器IP上  
+http://interface.bilibili.tv/blocklist  
+http://interface.bilibili.tv/dmblock*  
+http://interface.bilibili.tv/dmunblock*  
