@@ -14,9 +14,9 @@ Bilibili comment public  block list porxy,use PHP
 把sql里的文件导入数据库之后设置config.php的内容.
 
 #客户端设置
-===========
-##Hosts方法
+
+##Hosts方法  
 设置 interface.bilibili.tv 到 服务器主机
 
-##SwitchySharp或autoProxy设置方法
+##SwitchySharp或autoProxy设置方法  
 设置以下几个规则到 服务器IP上
