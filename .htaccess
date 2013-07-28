@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^interface.bilibili.tv$
+RewriteRule ^(((?!dmblock|blocklist|dmunblock).)*)$ http://interface.bilibili.tv/$1 [P]
+RewriteRule ^dmunblock(.*)$ dmunblock.php [L]
+RewriteRule ^blocklist(.*)$ blocklist.php [L]
+RewriteRule ^dmblock(.*)$ dmblock.php [L]
+
+#RewriteCond %{HTTP_HOST} ^comment.bilibili.tv$
+#RewriteRule ^cloud/filter/(((?!\d+?\.json).)*)$ http://comment.bilibili.tv/cloud/filter/$1 [P]
+
