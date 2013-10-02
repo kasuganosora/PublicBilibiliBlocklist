@@ -1,8 +1,8 @@
 <?php
 require_once("init.php");
 
-$type = $_GET['type'];
-$data = $_GET['data'];
+$type = mysql_real_escape_string($_GET['type']);
+$data = mysql_real_escape_string($_GET['data']);
 if(isset($type) && isset($data) && $type != ""){
 	//添加
 	$mode = "blocklist";
@@ -16,6 +16,9 @@ if(isset($type) && isset($data) && $type != ""){
 
 $sql = "select * from `filter` order by `id` desc";
 $blockList = $db->get_results($sql);
+if(!$blockList){
+	$blockList = array();
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
@@ -79,7 +82,7 @@ $blockList = $db->get_results($sql);
 					?>
 					<tr data-id="<?php echo $item->id; ?>" data-type="<?php echo $item->type; ?>">
 						<td><?php echo $typeStr; ?></td>
-						<td><?php echo $item->val; ?></td>
+						<td><?php echo reducingString($item->val); ?></td>
 						<td class="action"><button class="btn btn-danger btn-delete">删除</button></td>
 					</tr>
 					<?php } ?>

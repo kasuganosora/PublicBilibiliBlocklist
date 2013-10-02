@@ -3,6 +3,9 @@ require_once("init.php");
 
 $sql = "select * from `filter` order by `id` desc";
 $blockList = $db->get_results($sql);
+if(!$blockList ){
+	$blockList = array();
+}
 
 $xmlstr = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
