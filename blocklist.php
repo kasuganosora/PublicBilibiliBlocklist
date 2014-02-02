@@ -1,7 +1,7 @@
 <?php
 require_once("init.php");
 
-$sql = "select * from `filter` order by `id` desc";
+$sql = "select * from `filter` where `mode` = 'blocklist' order by `id` desc";
 $blockList = $db->get_results($sql);
 if(!$blockList ){
 	$blockList = array();

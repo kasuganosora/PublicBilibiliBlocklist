@@ -8,3 +8,13 @@ RewriteRule ^dmblock(.*)$ dmblock.php [L]
 #RewriteCond %{HTTP_HOST} ^comment.bilibili.tv$
 #RewriteRule ^cloud/filter/(((?!\d+?\.json).)*)$ http://comment.bilibili.tv/cloud/filter/$1 [P]
 
+# A站关键字屏蔽
+RewriteCond %{HTTP_HOST} ^static.acfun.tv$
+RewriteRule ^player\/filter\/ban\.json.*?$ acfun.php [L]
+# A站UID屏蔽
+RewriteRule ^player\/filter\/blacklist\.json.*?$ acfun_blacklist.php [L]
+
+# A站屏蔽用户页面
+# http://www.acfun.tv/report.aspx
+RewriteCond %{HTTP_HOST} ^www.acfun.tv$
+RewriteRule ^report\.aspx.*?$ acfun_report.php [L]

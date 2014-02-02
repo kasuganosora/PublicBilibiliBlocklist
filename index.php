@@ -74,6 +74,9 @@ if(!$blockList){
 						break;
 						case "user":
 							$typeStr = "用户";
+							if($item->mode == "acufn_blocklist") {
+								$typeStr .= "[ACFUN]";
+							}
 						break;
 						case "color":
 							$typeStr = "颜色";
