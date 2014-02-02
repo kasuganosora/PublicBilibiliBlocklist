@@ -24,9 +24,10 @@ http://interface.bilibili.tv/blocklist
 http://interface.bilibili.tv/dmblock*  
 http://interface.bilibili.tv/dmunblock*  
 
-### ACFUN屏蔽功能,需要添加以下几条代理规则
-\*://static.acfun.tv/player/filter/blacklist.json*
-\*://www.acfun.tv/report.aspx*
-\*://static.acfun.tv/player/filter/ban.json*
+### ACFUN屏蔽功能,需要添加以下几条代理规则  
+
+\*://static.acfun.tv/player/filter/blacklist.json*  
+\*://www.acfun.tv/report.aspx*  
+\*://static.acfun.tv/player/filter/ban.json*  
 
 *acfun 关键字添加要到管理页面添加,屏蔽用户要在播放器中右键[举报用户], 然后在弹出页面上点击[屏蔽用户]按钮即可,不需要真的举报用户.*
