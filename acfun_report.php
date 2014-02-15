@@ -11,7 +11,7 @@ $js = <<<JAVASCRIPT
 		overFlow:"hidden",
 		textAlign: "center",
 		marginTop: ".5em"
-	}).appendTo("#block-hint .alert");
+	}).appendTo(".alert.alert-warning");
 
 
 
